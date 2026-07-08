@@ -1,0 +1,357 @@
+/* ===========================
+   Smart Medicine Box Website
+   style.css
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f8fc;
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* Navigation */
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:#0b4b8a;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 80px;
+    z-index:999;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.logo{
+    font-size:26px;
+    font-weight:700;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#9ed5ff;
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:140px 10%;
+    background:linear-gradient(135deg,#eaf5ff,#ffffff);
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:72px;
+    color:#0b4b8a;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:26px;
+    color:#4b4b4b;
+    margin-bottom:20px;
+}
+
+.hero-text h3{
+    font-weight:400;
+    line-height:1.7;
+    margin-bottom:40px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#0b6ad6;
+    color:white;
+    border-radius:50px;
+    text-decoration:none;
+    transition:.3s;
+    font-size:18px;
+}
+
+.btn:hover{
+    background:#084c97;
+    transform:translateY(-3px);
+}
+
+.hero-image{
+    width:45%;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:600px;
+    transition:.5s;
+}
+
+.hero-image img:hover{
+    transform:scale(1.05);
+}
+
+/* Section */
+
+section{
+    padding:90px 10%;
+}
+
+section h2{
+    text-align:center;
+    font-size:42px;
+    color:#0b4b8a;
+    margin-bottom:50px;
+}
+
+/* Features */
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#0b4b8a;
+    margin-bottom:20px;
+}
+
+.card p{
+    color:#666;
+    line-height:1.8;
+}
+
+/* Reminder */
+
+.reminder{
+    background:#edf6ff;
+}
+
+.reminder p{
+    text-align:center;
+    margin-bottom:35px;
+    color:#666;
+}
+
+.reminder-box{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.time-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.time-item label{
+    font-size:18px;
+    font-weight:600;
+}
+
+.time-item input{
+    width:180px;
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+#saveBtn{
+    width:100%;
+    padding:16px;
+    margin-top:20px;
+    border:none;
+    border-radius:12px;
+    background:#0b6ad6;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#saveBtn:hover{
+    background:#084c97;
+}
+
+/* Schedule */
+
+.schedule-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.schedule-card{
+    background:white;
+    border-radius:18px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    font-size:22px;
+    color:#0b4b8a;
+}
+
+.schedule-card span{
+    display:block;
+    margin-top:20px;
+    font-size:34px;
+    color:#222;
+    font-weight:bold;
+}
+
+/* About */
+
+.about{
+    display:flex;
+    align-items:center;
+    gap:60px;
+}
+
+.about-left{
+    width:45%;
+}
+
+.about-left img{
+    width:100%;
+}
+
+.about-right{
+    width:55%;
+}
+
+.about-right h2{
+    text-align:left;
+    margin-bottom:30px;
+}
+
+.about-right p{
+    line-height:1.9;
+    margin-bottom:20px;
+    color:#555;
+}
+
+/* Footer */
+
+footer{
+    background:#0b4b8a;
+    color:white;
+    text-align:center;
+    padding:45px 20px;
+}
+
+footer h2{
+    color:white;
+    margin-bottom:15px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+/* Responsive */
+
+@media(max-width:1000px){
+
+header{
+    padding:20px;
+    flex-direction:column;
+    gap:15px;
+}
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+    padding-top:180px;
+}
+
+.hero-text{
+    width:100%;
+}
+
+.hero-image{
+    width:90%;
+    margin-top:40px;
+}
+
+.hero-text h1{
+    font-size:48px;
+}
+
+.hero-text p{
+    font-size:22px;
+}
+
+.about{
+    flex-direction:column;
+}
+
+.about-left,
+.about-right{
+    width:100%;
+}
+
+.about-right h2{
+    text-align:center;
+}
+
+.time-item{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+}
+
+.time-item input{
+    width:100%;
+}
+
+}
